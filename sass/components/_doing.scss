@@ -1,0 +1,38 @@
+.doing {
+  background-color: var(--main-background-color);
+  padding-top: 0px;
+&__list {
+  display: flex;
+}
+&__item:not(:last-child) {
+  margin-right: 30px;
+}
+&__title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-textcolor);
+}
+&__item {
+  position: relative;
+}
+&__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-background-color);
+  background: rgba(47, 48, 58, 0.8);
+}
+}

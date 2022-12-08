@@ -1,0 +1,73 @@
+.header {
+  border-bottom: 1px solid #ececec;
+&__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+&__main-nav {
+  display: flex;
+}
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+&__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-textcolor);
+  padding: 10px;
+  position: relative;
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+}
+  &--active {
+  color: #2196f3;
+}
+ &--active::after {
+  content: "";
+  background: var(--accent-color);
+  width: calc(100% - 20px);
+  height: 4px;
+  position: absolute;
+  top: auto;
+  bottom: -23px;
+  left: 10px;
+  border-radius: 2px;
+}
+}
+&__item:not(:first-child){
+  margin-left: 50px;
+}
+}
+ 
+.contact-list {
+  display: flex;
+  margin-left: auto;
+&__item:not(:first-child){
+  margin-left: 50px;
+}
+&__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--second-textcolor);
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+}
+}
+&__icon {
+  fill: currentColor; /* наследует цвет от родительской ссылки contact*/
+  margin-right: 10px;
+}
+}
