@@ -19,16 +19,31 @@ html {
     margin: 0px;
     padding: 0px;
   }
- .container {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
-    padding: 0px 15px;
-  }
-  .section {
+    
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    }
+    }
+    
+    
+    .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
+      }
+    }
   img {
     display: block;
     max-width: 100%;
