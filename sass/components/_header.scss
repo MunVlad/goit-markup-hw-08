@@ -3,7 +3,7 @@
   &__wrapper {
   height: 60px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 10px;  
   display: flex;
   align-items: center;
   @media screen and (min-width:768px) {
@@ -20,6 +20,18 @@
   display: none;
   @media screen and (min-width:768px) {
     display: flex;
+  }
+}
+&__button {
+  background-color: #fff;
+  padding: 0;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border-color: transparent;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 }
