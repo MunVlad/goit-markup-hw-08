@@ -37,7 +37,10 @@
 }
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px; 
+  }
 &__link {
   display: block;
   font-weight: 500;
@@ -45,7 +48,8 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-textcolor);
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
   &:hover,
   &:focus {
@@ -74,21 +78,31 @@
 .contact-list {
   display: none;
   @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-left: auto;
+  }  
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
   }  
-&__item:not(:first-child){
-  margin-left: 50px;
-}
+  @media screen and (min-width: 1200px){
+    &__item:not(:first-child){
+      margin-left: 50px;
+     }
+  }
+
 &__link {
   display: inline-flex;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--second-textcolor);
+  @media screen and (min-width: 1200px){
+    font-size: 14px;
+}
   &:hover,
   &:focus {
   color: var(--accent-color);
@@ -96,6 +110,9 @@
 }
 &__icon {
   fill: currentColor; /* наследует цвет от родительской ссылки contact*/
-  margin-right: 10px;
+  margin-right: 8px;
+  @media screen and (min-width: 1200px){
+    margin-right: 10px;
+}
 }
 }
