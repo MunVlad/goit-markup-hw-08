@@ -1,13 +1,26 @@
-.header {
+.header {  
   border-bottom: 1px solid #ececec;
-&__wrapper {
+  &__wrapper {
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
+  @media screen and (min-width:768px) {
+    height: 80px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width:1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+ }
 &__main-nav {
-  display: flex;
+  display: none;
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
 }
 }
 .site-nav {
@@ -47,8 +60,11 @@
 }
  
 .contact-list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+  }  
 &__item:not(:first-child){
   margin-left: 50px;
 }
