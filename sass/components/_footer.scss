@@ -120,19 +120,27 @@
 }
 
 &__form {
-  display: flex;
-  margin-left: 93px;
   position: relative;
-  width: 570px;
-  height: 86px;
+width: 450px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 93px;
+    width: 570px;
+    height: 86px;
+  }
+
 }
 &__field {
   display: flex;
   flex-direction: column;
-  margin-right: 12px;
-  width: 358px;
+  @media screeb and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
+  
 }
 &__label {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
