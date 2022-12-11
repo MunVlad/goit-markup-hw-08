@@ -86,10 +86,12 @@
 }
 
 &__item:not(:last-child) {
-  margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px; 
+    }
 }
 &__contact {
-  margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
