@@ -22,7 +22,7 @@
   // margin: 0px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   display: flex;
   padding: 0px;
   @media screen and (min-width: 1200px) {
@@ -31,11 +31,11 @@
     }
   // margin: 0px;
 }
-&__social-link {  
+&__social-link { 
+  margin-bottom: 60px; 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
-    }
-  
+    }  
 }
 &__social-title {
   margin-top: 0px;
@@ -71,7 +71,7 @@
 }
 
 &__address-link {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -79,9 +79,6 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 9px;
-    }
   &:hover,
   &:focus {
   color: var(--accent-color);
