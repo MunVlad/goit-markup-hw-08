@@ -557,7 +557,7 @@ img {
 
 .hero {
   height: 400px;
-  max-width: 480px;
+  max-width: 1200px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-repeat: no-repeat;
@@ -578,7 +578,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/Header\ img_768.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/Header\ img_768.jpg);
   }
