@@ -398,10 +398,15 @@ img {
 }
 .footer__form {
   position: relative;
-  width: 450px;
+}
+@media screen and (max-width: 767px) {
+  .footer__form {
+    min-width: 70%;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__form {
+    width: 450px;
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -445,7 +450,8 @@ img {
 }
 .footer__input {
   margin-bottom: 20px;
-  width: 450px;
+  min-width: 50%;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -635,15 +641,15 @@ img {
     width: 100%;
     padding-top: 200px;
     height: auto;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/header_img_1600.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/header_img_1600.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/heroimage.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heroimage.jpg);
     background-size: 100% 100%;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-width: 1200px) and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/header_img_1600@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/header_img_1600@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/heroimage.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heroimage.jpg);
   }
 }
 .hero__title {
