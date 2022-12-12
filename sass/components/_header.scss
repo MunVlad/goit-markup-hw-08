@@ -22,18 +22,6 @@
     display: flex;
   }
 }
-&__button {
-  background-color: #fff;
-  padding: 0;
-  margin-left: auto;
-  width: 40px;
-  height: 40px;
-  border-color: transparent;
-  cursor: pointer;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
 }
 .site-nav {
   display: flex;
@@ -115,4 +103,16 @@
     margin-right: 10px;
 }
 }
+}
+.menu-toggle {
+  background-color: #fff;
+  padding: 0;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border-color: transparent;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

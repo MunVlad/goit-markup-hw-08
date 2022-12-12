@@ -160,20 +160,6 @@ img {
     display: flex;
   }
 }
-.header__button {
-  background-color: #fff;
-  padding: 0;
-  margin-left: auto;
-  width: 40px;
-  height: 40px;
-  border-color: transparent;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .header__button {
-    display: none;
-  }
-}
 
 .site-nav {
   display: -webkit-box;
@@ -269,6 +255,21 @@ img {
 @media screen and (min-width: 1200px) {
   .contact-list__icon {
     margin-right: 10px;
+  }
+}
+
+.menu-toggle {
+  background-color: #fff;
+  padding: 0;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border-color: transparent;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
 }
 
