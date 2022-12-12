@@ -398,10 +398,15 @@ img {
 }
 .footer__form {
   position: relative;
-  width: 450px;
+}
+@media screen and (max-width: 767px) {
+  .footer__form {
+    min-width: 70%;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__form {
+    width: 450px;
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -445,7 +450,8 @@ img {
 }
 .footer__input {
   margin-bottom: 20px;
-  width: 450px;
+  min-width: 50%;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
