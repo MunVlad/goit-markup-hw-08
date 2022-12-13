@@ -101,7 +101,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 357px;
+  min-width: 50%;
+  @media screen and (min-width: 480px) {
+    width: 357px;
+  }
   &__item:not(:last-child) {
     margin-right: 20px;
   }
