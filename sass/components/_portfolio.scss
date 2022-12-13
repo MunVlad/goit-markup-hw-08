@@ -1,10 +1,19 @@
 .menu{
-  width: 1200px;
-  padding: 0px 15px;
+  width: 100%;
+  // padding: 0px 15px;
  &__list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  
+  @media screen and (min-width:480px) {
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 &__button {
   background: #f5f4fa;
