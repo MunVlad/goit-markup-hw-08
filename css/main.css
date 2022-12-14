@@ -1101,7 +1101,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio__list {
@@ -1117,6 +1116,7 @@ img {
   .portfolio__item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
+    height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
