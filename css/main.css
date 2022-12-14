@@ -263,8 +263,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer__wrapper {
-  text-align: center;
+@media screen and (max-width: 1199.98px) {
+  .footer__wrapper {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__wrapper {
@@ -891,16 +893,17 @@ img {
     margin-right: 30px;
   }
 }
-.team__img__card {
+.team__card {
   padding-bottom: 24px;
   padding-top: 30px;
 }
 @media screen and (min-width: 1200px) {
-  .team__img__card {
+  .team__card {
     padding-bottom: 30px;
   }
 }
-.team .social-icons {
+
+.social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -908,15 +911,15 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.team .social-icons__item {
+.social-icons__item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
-.team .social-icons__item:last-child {
+.social-icons__item:last-child {
   margin-right: 0px;
 }
-.team .social-icons__link {
+.social-icons__link {
   background-color: var(--main-background-color);
   border-radius: 50%;
   width: 100%;
@@ -934,11 +937,11 @@ img {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team .social-icons__link:hover, .team .social-icons__link:focus {
+.social-icons__link:hover, .social-icons__link:focus {
   background-color: var(--accent-color);
   color: var(--main-background-color); /*иконка наследует цвет от родительского элемента social-link */
 }
-.team .social-icons__icon {
+.social-icons__icon {
   fill: currentColor; /*иконка наследует цвет от родительского элемента social-link */
 }
 
@@ -1044,12 +1047,16 @@ img {
         flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .menu__list {
-    margin-bottom: 50px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__list {
+    margin-bottom: 50px;
   }
 }
 .menu__button {
@@ -1080,6 +1087,11 @@ img {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 480px) {
+  .menu__item:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
+}
 .portfolio {
   background-color: var(--main-background-color);
 }
@@ -1089,21 +1101,32 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    margin: -15px;
+  }
 }
 .portfolio__item {
-  margin-right: 30px;
   margin-bottom: 30px;
-  width: 370px;
+  width: 100%;
   background: var(--main-background-color);
 }
-.portfolio__item:nth-child(3n+3) {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
-.portfolio__item:nth-child(3n+1) {
-  margin-left: 0px;
-}
-.portfolio__item:nth-last-child(-n+3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: calc((100% - 90px) / 3);
+    height: 404px;
+  }
+  .portfolio__item:nth-child(n+6) {
+    margin-bottom: 0;
+  }
 }
 .portfolio__wrapper {
   position: relative;
@@ -1145,6 +1168,7 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio__img {
+  width: 100%;
   margin: 0px;
   display: block;
 }
@@ -1188,7 +1212,6 @@ img {
           transform: scale(0);
   position: absolute;
   width: 450px;
-  height: 609px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
