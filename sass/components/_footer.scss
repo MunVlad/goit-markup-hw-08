@@ -3,7 +3,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 &__wrapper {
-  text-align: center;
+  @media screen and (max-width:1199.98px) {
+    text-align: center;
+  }  
   @media screen and (min-width: 768px) {
   display: flex;
   flex-wrap: wrap;
